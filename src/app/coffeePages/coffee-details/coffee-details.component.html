@@ -1,0 +1,46 @@
+<div class="container" *ngIf="coffeeItem | async as coffeeData">
+  <div class="row justify-content-md-center">
+    <div class="col-12">
+      <h2>Coffee Details</h2>
+    </div>
+  </div>
+  <div class="coffee-form">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 col-lg-4">
+        <label for="idField" class="form-label">Id:</label>
+        <span id="idField">{{ coffeeData.id }}</span>
+      </div>
+      <div class="col-md-12 col-lg-8">
+        <label for="uidField" class="form-label">UID:</label>
+        <span id="uidField">{{ coffeeData.uid }}</span>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 col-lg-4">
+        <label for="blendNameField" class="form-label">Blend Name :</label>
+        <span id="blendNameField">{{ coffeeData.blend_name }}</span>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <label for="originField" class="form-label">Origin:</label>
+        <span id="originField">{{ coffeeData.origin }}</span>
+      </div>
+      <div class="col-md-12 col-lg-4">
+        <label for="varietyField" class="form-label">Variety:</label>
+        <span id="varietyField">{{ coffeeData.variety }}</span>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 col-lg-4">
+        <label for="intensifierField" class="form-label">Intensifier:</label>
+        <span id="intensifierField">{{ coffeeData.intensifier }}</span>
+
+      </div>
+      <div class="col-md-12 col-lg-8">
+        <label for="notesField" class="form-label">Notes:</label>
+        <span id="notesField">{{ coffeeData.notes }}</span>
+      </div>
+    </div>
+  </div>
+</div>
